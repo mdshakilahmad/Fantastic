@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.section {
+    padding: 130px 0;
+}
+
+/*End common css */
+/* header section start  */
+/* scroll on window  text and background color change  */
+nav .navbar-brand {
+    color: #fff;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+nav ul li a {
+    color: #fff;
+    font-weight: 600;
+    margin-right: 20px;
+}
+
+nav {
+    background-color: black;
+}
+
+nav.scrolled {
+    background-color: white !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#onepage-nav li a.scroll.active {
+    /* custom styles here */
+    border-bottom: 2px solid black;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.btn-theme {
+    padding: 12px 25px;
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 600;
+    transition: ease all 0.35s;
+    border-radius: 10px;
+    border: none;
+    background: #37715D;
+    border-color: #37715D;
+    color: #fff;
+}
+
+.btn-theme i {
+    padding-left: 8px;
+}
+
+/*End header section start  */
+/* .scrolled .navbar-toggler {
+    background: transparent;
+}
+
+.navbar-toggler {
+    background-color: white !important;
+} */
