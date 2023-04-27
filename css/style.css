@@ -72,6 +72,14 @@ nav.scrolled {
     box-shadow: none;
 }
 
+.home-section h6 span {
+    color: #FEC448;
+}
+
+.home-section h2 span b {
+    color: #FEC448;
+}
+
 .btn-theme {
     padding: 12px 25px;
     font-size: 14px;
@@ -90,10 +98,3 @@ nav.scrolled {
 }
 
 /*End header section start  */
-/* .scrolled .navbar-toggler {
-    background: transparent;
-}
-
-.navbar-toggler {
-    background-color: white !important;
-} */
