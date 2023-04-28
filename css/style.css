@@ -56,7 +56,7 @@ nav {
 
 nav.scrolled {
     background-color: white !important;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
 }
 
 #onepage-nav li a.scroll.active {
@@ -73,11 +73,11 @@ nav.scrolled {
 }
 
 .home-section h6 span {
-    color: #FEC448;
+    color: #fec448;
 }
 
 .home-section h2 span b {
-    color: #FEC448;
+    color: #fec448;
 }
 
 .btn-theme {
@@ -88,8 +88,8 @@ nav.scrolled {
     transition: ease all 0.35s;
     border-radius: 10px;
     border: none;
-    background: #37715D;
-    border-color: #37715D;
+    background: #37715d;
+    border-color: #37715d;
     color: #fff;
 }
 
@@ -98,3 +98,96 @@ nav.scrolled {
 }
 
 /*End header section start  */
+/* Services */
+#Services .icon a {
+    color: black;
+}
+
+#Services .icon a span {
+    margin-top: auto;
+    font-size: 13px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+#Services .icon a i {
+    background: black;
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+    color: white;
+    border: 2px solid black;
+    text-align: center;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s;
+}
+
+.services-left:hover .icon a i {
+    background: white !important;
+    color: black !important;
+    border: 2px solid black !important;
+}
+
+#Services .icon a:hover i {
+    background: white;
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+    color: black;
+    border: 2px solid black;
+    text-align: center;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.services-left h6 {
+    font-size: 30px;
+    font-weight: 600;
+    color: black;
+    text-transform: uppercase;
+}
+
+.services-left p {
+    font-size: 18px;
+    color: black;
+    font-weight: 400;
+}
+
+.services-right .counter-container span {
+    position: relative;
+    font-weight: 900;
+    font-size: 25px;
+}
+
+.services-right .counter-container h6 {
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-top: 10px;
+}
+
+.services-right .counter-container span::after {
+    position: absolute;
+    content: "+";
+}
+
+.services-right .counter-container {
+    height: 100%;
+    padding: 20px;
+    background: rgba(204, 192, 192, 0.4);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.services-right h6 {
+    font-size: 20px;
+    padding-bottom: 10px;
+}

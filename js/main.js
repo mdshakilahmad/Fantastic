@@ -33,7 +33,8 @@ jQuery(".scroll").onePgaeNav({
 $(".owl-carousel").owlCarousel({
   loop: true,
   margin: 10,
-  nav: true,
+  nav: false,
+  dots: false,
   margin: 40,
   autoplay: true,
   autoplayTimeout: 2000,
@@ -49,7 +50,21 @@ $(".owl-carousel").owlCarousel({
     },
   },
 });
-// animition
+
+// 4. animition
 $(".animate-clip").animatedHeadline({
   animationType: "clip",
+});
+
+// 5. counterUp
+$(".counter").counterUp({
+  delay: 50,
+  time: 2000,
+});
+
+// s
+$(".parent-container").magnificPopup({
+  delegate: "a", // child items selector, by clicking on it popup will open
+  type: "image",
+  // other options
 });
