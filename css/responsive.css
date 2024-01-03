@@ -19,13 +19,29 @@
         background-color: white;
     }
 
-    nav .navbar-brand {
+    nav .brand {
         color: black;
     }
 
     nav ul li a {
         color: black;
     }
+
+    #onepage-nav li a.scroll.active {
+        /* custom styles here */
+        border-bottom: 1px solid black;
+    }
+
+    #onepage-nav li a.scroll.active::before {
+        display: none;
+    }
+
+    .next-section {
+        display: none;
+    }
+
+
+
 
 }
 
