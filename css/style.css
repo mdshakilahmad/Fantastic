@@ -32,7 +32,13 @@ img {
 }
 
 .section {
-    padding: 100px 0;
+    padding: 70px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 25px;
+    text-transform: uppercase;
 }
 
 /*End common css */
@@ -85,16 +91,27 @@ nav.scrolled {
     border: none;
 }
 
+.important-color {
+    color: white !important;
+}
+
 .navbar-toggler:focus {
     box-shadow: none;
 }
 
+.home-section {
+    background: rgb(34, 193, 195);
+    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+}
+
+.home-section h6 {}
+
 .home-section h6 span {
-    color: #fec448;
+    color: brown;
 }
 
 .home-section h2 span b {
-    color: #fec448;
+    color: brown;
 }
 
 .btn-theme {
@@ -182,22 +199,30 @@ header {
 
 /*End header section start  */
 /* about section start  */
+.about-section h2 {
+    margin-bottom: 10px;
+}
+
+.about-section h4 {
+    margin-bottom: 10px;
+}
+
 .social-icon {
     padding-top: 50px;
 }
 
 .social-icon a i {
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
     font-size: 15px;
     color: white;
     background-color: black;
     cursor: pointer;
-    border-radius: 6px;
+    border-radius: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: .6s;
+    transition: 0.4s;
     margin-right: 5px;
 }
 
@@ -205,16 +230,25 @@ header {
     color: black;
     border: 2px solid black;
     background-color: transparent;
+    border-radius: 30% 70% 49% 51% / 30% 30% 70% 70%;
+    background: rgb(34, 193, 195);
+    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
 }
 
 .box-img img {
-    border: 3px double #000000;
-    border-radius: 10px;
-    box-shadow: rgba(80, 11, 52, 0.4) -5px 5px, rgba(90, 25, 60, 0.3) -10px 10px, rgba(122, 27, 87, 0.2) -15px 15px, rgba(133, 23, 92, 0.1) -20px 20px, rgba(185, 45, 134, 0.05) -25px 25px;
+    background: rgb(34, 193, 195);
+    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+    border-radius: 30% 70% 49% 51% / 30% 30% 70% 70%;
 }
 
 /*End about section */
 /* Services */
+#Services {
+    position: relative;
+    background: rgb(34, 193, 195);
+    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+}
+
 #Services .icon a {
     color: black;
 }
@@ -241,6 +275,12 @@ header {
     transition: 0.4s;
 }
 
+.services-left {
+    border-radius: 10px;
+    padding: 15px;
+
+}
+
 .services-left:hover .icon a i {
     background: white !important;
     color: black !important;
@@ -262,7 +302,7 @@ header {
 }
 
 .services-left h6 {
-    font-size: 30px;
+    font-size: 22px;
     font-weight: 600;
     color: black;
     text-transform: uppercase;
@@ -286,13 +326,6 @@ header {
     padding-top: 10px;
 }
 
-.services-right p {
-    font-size: 18px;
-    color: black;
-    font-weight: 400;
-    margin-bottom: 20px;
-}
-
 .services-right .counter-container span::after {
     position: absolute;
     content: "+";
@@ -301,7 +334,10 @@ header {
 .services-right .counter-container {
     height: 100%;
     padding: 20px;
-    background: rgba(204, 192, 192, 0.4);
+    border: 1px solid wheat;
+    /* background-color: ; */
+    /* background: rgb(34, 193, 195);
+    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%); */
     border-radius: 5px;
     display: flex;
     flex-direction: column;
@@ -310,12 +346,187 @@ header {
     text-align: center;
 }
 
-.section-title h2 {
-    font-size: 30px;
-    padding-bottom: 10px;
+.services-right p {
+    font-size: 20px;
+    font-weight: 600;
+    color: #000;
+    padding-bottom: 5px;
 }
+
+.services-right p span {
+    color: blue;
+}
+
 
 .icon-slid i {
     width: 200px;
     height: 200px;
 }
+
+/* protfolio section start  */
+.protfolio-filter ul li {
+    display: inline-block;
+    padding: 6px 12px;
+    background: #37715d;
+    color: #fff;
+    font: 35px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.protfolio-filter .item {
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+.protfolio-filter .item:hover {
+    -webkit-box-shadow: -3px 10px 20px 1px rgba(71, 60, 71, 0.52);
+    -moz-box-shadow: -3px 10px 20px 1px rgba(71, 60, 71, 0.52);
+    box-shadow: -3px 10px 20px 1px rgba(71, 60, 71, 0.52);
+}
+
+
+/* start */
+.protfolio-filter .item {
+    position: relative;
+}
+
+.protfolio-filter .item:hover .overlay {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.protfolio-filter .item .overlay {
+    position: absolute;
+    height: 95%;
+    width: 95%;
+    background: rgba(55, 113, 93, 0.5);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    border: 5px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .4s;
+}
+
+.protfolio-filter .item .overlay span i {
+    font-size: 40px;
+    color: white;
+}
+
+/* end */
+.protfolio-filter ul li.mixitup-control-active {
+    background: #000;
+}
+
+/* End protfolio section  */
+/*skill section start */
+.skill-section {
+    position: relative;
+    background: rgb(34, 193, 195);
+    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+}
+
+.skill-section h4 {
+    margin: 10px 0;
+}
+
+.skill-section p {
+    border-left: 5px solid blueviolet;
+    padding-left: 5px;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-bottom: 25px;
+}
+
+.skill-section .skill-items {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skill-section .item {
+    padding: 10px 20px;
+    border: 1px solid wheat;
+    margin: 5px;
+    text-align: center;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all linear ease 0.4s;
+}
+
+.skill-section .item:hover {
+    border: 1px solid violet;
+    background-color: #000;
+}
+
+.skill-section .item i {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+/*End skill section */
+
+.contact-section {}
+
+.contact-section form input,
+textarea {
+    border: none;
+    border-bottom: 1px solid gray;
+    outline: #fff;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.contact-section form textarea {
+    width: 100%;
+    height: 100px;
+}
+
+.contact-section form button i {
+    margin-left: 8px;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+.contact-section form button:hover i {
+    transform: translateX(5px);
+}
+
+/* footer section start */
+.footer-section {
+    position: relative;
+    background: rgb(34, 193, 195);
+    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+}
+
+.copyright-area {
+    font-weight: 600;
+}
+
+.footer-section i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    color: #000;
+    font-size: 30px;
+    background-color: white;
+    text-align: center;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.footer-section i:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+/* End footer section */
