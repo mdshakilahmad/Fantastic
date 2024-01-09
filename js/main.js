@@ -63,17 +63,7 @@ $(".counter").counterUp({
 });
 
 // 6. magnificPopup 1
-$(".parent-container").magnificPopup({
-  delegate: "a", // child items selector, by clicking on it popup will open
-  type: "image",
-  // other options
-});
-
-// 7. mixitup
-var mixer = mixitup(".img-container-filter");
-
-// 8. magnificPopup 2
-$(".img-container").magnificPopup({
+$(".magnificPopup-container").magnificPopup({
   delegate: "a", // child items selector, by clicking on it popup will open
   type: "image",
   gallery: {
@@ -82,7 +72,10 @@ $(".img-container").magnificPopup({
   // other options
 });
 
-// 9. wow
+// 7. mixitup
+var mixer = mixitup(".mixitup-container");
+
+// 8. wow
 var wow = new WOW({
   boxClass: "wow", // animated element css class (default is wow)
   animateClass: "animated", // animation css class (default is animated)
@@ -98,7 +91,7 @@ var wow = new WOW({
 });
 wow.init();
 
-// 10 scroll to top arrow
+// 9 scroll to top arrow
 window.addEventListener("scroll", () => {
   const arrowTop = document.querySelector(".arrow-top");
   if (window.pageYOffset > 300) {
