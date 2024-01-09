@@ -97,3 +97,21 @@ var wow = new WOW({
   resetAnimation: true, // reset animation on end (default is true)
 });
 wow.init();
+
+// 10 scroll to top arrow
+window.addEventListener("scroll", () => {
+  const arrowTop = document.querySelector(".arrow-top");
+  if (window.pageYOffset > 300) {
+    arrowTop.style.display = "block";
+  } else {
+    arrowTop.style.display = "none";
+  }
+
+  // click
+  arrowTop.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  });
+});

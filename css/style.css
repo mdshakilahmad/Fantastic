@@ -509,23 +509,26 @@ textarea {
     font-weight: 600;
 }
 
-.footer-section i {
+/* End footer section */
+/* arrow-top start  */
+.arrow-top {
+    position: fixed;
+    right: 20px;
+    bottom: 50px;
+    display: none;
+}
+
+.arrow-top a i {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 30px;
-    height: 30px;
-    color: #000;
-    font-size: 30px;
-    background-color: white;
-    text-align: center;
-    border-radius: 50%;
-    transition: 0.3s;
-}
-
-.footer-section i:hover {
-    background-color: #000;
+    width: 25px;
+    height: 25px;
     color: #fff;
+    font-size: 20px;
+    background-color: black;
+    text-align: center;
+    border-radius: 5px;
 }
 
-/* End footer section */
+/* End arrow-top */
