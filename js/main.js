@@ -70,7 +70,7 @@ $(".parent-container").magnificPopup({
 });
 
 // 7. mixitup
-var mixer = mixitup(".protfolio-filter");
+var mixer = mixitup(".img-container-filter");
 
 // 8. magnificPopup 2
 $(".img-container").magnificPopup({
