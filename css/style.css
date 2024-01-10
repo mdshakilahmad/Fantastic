@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
+html,
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -104,7 +111,9 @@ nav.scrolled {
     background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
 }
 
-.home-section h6 {}
+.home-section h6 {
+    font-weight: 600;
+}
 
 .home-section h6 span {
     color: brown;
@@ -298,7 +307,7 @@ header {
 }
 
 .services-left h6 {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
     color: black;
     text-transform: uppercase;
@@ -384,13 +393,10 @@ header {
     box-shadow: -3px 10px 20px 1px rgba(71, 60, 71, 0.52);
 }
 
-
 /* start */
 .protfolio-filter .item {
     position: relative;
 }
-
-
 
 .protfolio-filter .item .overlay {
     position: absolute;
@@ -436,9 +442,9 @@ header {
 .skill-section p {
     border-left: 5px solid blueviolet;
     padding-left: 5px;
-    font-size: 20px;
     border-radius: 5px;
     margin-bottom: 25px;
+    font-weight: 500;
 }
 
 .skill-section .skill-items {
@@ -470,9 +476,6 @@ header {
 }
 
 /*End skill section */
-
-.contact-section {}
-
 .contact-section form input,
 textarea {
     border: none;
@@ -500,7 +503,7 @@ textarea {
 
 /* footer section start */
 .footer-section {
-    padding: 10px 0;
+    padding: 20px 0;
     background: rgb(34, 193, 195);
     background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
 }
